@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
-    "setup": "mkdir build",
     "build": "npm run build-sass && npm run build-js",
     "build-js": "./node_modules/browserify/bin/cmd.js -t reactify js/main.js -o build/app.js",
     "build-sass": "cat css/main.scss | ./node_modules/node-sass/bin/node-sass > build/app.css"

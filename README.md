@@ -5,9 +5,8 @@ DataScience's Frontend Code Test
 
 1.	Note: this assumes you cloned the repo and have node.js with npm installed
 2.  `npm install`
-3.  `npm run setup`
-4.  `npm run build`
-5.  `npm run server`
+3.  `npm run build`
+4.  `npm run server`
 5.  Open `http://localhost:8080/` in your browser
 
 ## ORIGINAL INSTRUCTIONS
