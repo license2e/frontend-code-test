@@ -1,0 +1,145 @@
+@import "../node_modules/react-select/dist/default.css";
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #222;
+  color: #eee;
+  padding: 0 0 150px 0;
+}
+
+.view {
+  margin-top: 25px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.recipe-list-container {
+  &.make-space {
+    margin-right: 200px;
+  }
+  .recipe-list-heading {
+    height: 35px;
+    h3, h4 {
+      margin: 0;
+    }
+    .recipe-list-heading-left {
+      float: left;
+      .recipe-list-heading-type-name,
+      .recipe-list-heading-ingredients {
+        margin-left: 75px;
+      }
+    }
+    .recipe-list-heading-filter {
+      float: left;
+      margin: 0 0 0 20px;
+      .Select {
+        width: 220px;
+      }
+    }
+    .recipe-list-heading-cooktime {
+      float: right;
+    }
+  }
+  .no-recipes {
+    margin: 15px 0 0 75px;
+  }
+}
+
+.recipe-item-container {
+  background-color: rgba(255, 255, 255, .2);
+  padding: 0;
+  margin: 15px 0;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+
+  &.hide {
+    display: none;
+  }
+
+  .recipe-item-select {
+    font-size: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -23px;
+    cursor: pointer;
+    a {
+      color: #999;
+      text-decoration: none;
+      &.selected {
+        color: #44aa44;
+      }
+    }
+  }
+  .recipe-item-cooktime {
+    float: right;
+    font-size: 170px;
+    margin-top: -20px;
+    font-family: "Arial Narrow", san-serif;
+    color: rgba(255, 255, 255, 0.35);
+    &.easy {
+      color: rgba(105, 252, 101, 0.35);
+    }
+    &.medium {
+      color: rgba(248, 252, 101, 0.35);
+    }
+    &.hard {
+      color: rgba(252, 101, 101, 0.35);
+    }
+  }
+  .recipe-item-type {
+    font-size: 36px;
+    line-height: 36px;
+    float: left;
+    font-weight: 200;
+    margin: 15px 0px 0px 75px;
+    color: #999;
+  }
+  .recipe-item-name {
+    font-size: 50px;
+    float: left;
+    margin: 10px 15px 0 10px;
+  }
+  .recipe-item-ingredients {
+    list-style: none;
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 12px;
+      line-height: 12px;
+      display: inline-block;
+      background-color: #ccc;
+      color: #222;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      padding: 4px 8px;
+      margin: 2px 1px;
+    }
+  }
+}
+
+.distinct-list {
+  float: right;
+  h3 {
+    margin: 0 0 27px 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #aaa;
+    color: #222;
+    li {
+      border-top: 1px solid #fff;
+      padding: 6px 12px;
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+}

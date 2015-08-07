@@ -1,15 +1,26 @@
 DataScience's Frontend Code Test
 ==================
 
+## BUILD and RUNNING INSTRUCTIONS
+
+1.	Note: this assumes you cloned the repo and have node.js with npm installed
+2.  `npm install`
+3.  `npm run setup`
+4.  `npm run build`
+5.  `npm run server`
+5.  Open `http://localhost:8080/` in your browser
+
+## ORIGINAL INSTRUCTIONS
+
 This is an at-home exercise that we use as part of our standard interview process for frontend and full-stack developers.
 
-## Instructions
+### Instructions
 
 * Clone this repo
 * Complete the exercise and submit either a zip of the solution or a link to a new repo
 * You may use any resources, frameworks, libraries, etc and style the markup however you like.
 
-## Requirements
+### Requirements
 
 Using the provided JSON data representing a collection of meal recipes, create a micro frontend application that meets the following criteria:
 
@@ -19,4 +30,3 @@ Using the provided JSON data representing a collection of meal recipes, create a
 * Show an alphabetically ordered list of distinct ingredients for the selected recipes. This should update as recipes are selected / unselected.
 * Persist the selections locally and regenerate the view on page refresh.
 * In a README note any required setup to be able to run the app, such as modifying hosts file, etc.
-
